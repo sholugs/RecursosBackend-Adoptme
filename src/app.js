@@ -18,5 +18,6 @@ app.use('/api/users',usersRouter);
 app.use('/api/pets',petsRouter);
 app.use('/api/adoptions',adoptionsRouter);
 app.use('/api/sessions',sessionsRouter);
+app.get('/api/nuevo', (_, res) => res.send('soy un nuevo endpoint'))
 
 app.listen(PORT,()=>console.log(`Listening on ${PORT}`))
